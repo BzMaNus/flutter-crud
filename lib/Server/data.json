@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Nattanan Thongmak",
+      "email": "nattanan4398@gmail.com",
+      "password": "1234",
+      "gender": "Male",
+      "imageUrl": "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/158928387_2544645599170888_2075493110663656086_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Jz8bYGO44zkAX-SKA-l&_nc_ht=scontent-sin6-4.xx&oh=00_AfAIRP6bOmb7ZZq15GmZpUEQTpXcN3H5B-fJHf00qV6CGw&oe=6513CF30"
+    },
+    {
+      "id": 2,
+      "fullname": "a",
+      "email": "a@mail.com",
+      "password": "123",
+      "gender": "Female",
+      "imageUrl": null
+    },
+    {
+      "id": 3,
+      "fullname": "test",
+      "email": "a2@mail.com",
+      "password": "123",
+      "gender": "Male",
+      "imageUrl": null
+    }
+  ]
+}
