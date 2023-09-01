@@ -8,6 +8,9 @@ class UserInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Users user = ModalRoute.of(context)!.settings.arguments as Users;
+    if (user.gender == null) {
+      user.gender = 'None';
+    }
     return Scaffold(
       appBar: AppBar(title: Text('User Info')),
       body: Container(

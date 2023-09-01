@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:js_interop';
 
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
@@ -132,12 +131,17 @@ class _UserFormState extends State<UserForm> {
   Widget genderInputField() {
     var initGen = 'None';
     try {
-      if (!user.gender!.isNull) {
+      if (!user.gender!.isEmpty) {
         initGen = user.gender!;
       }
     } catch (e) {
       initGen = initGen;
     }
+
+    if (initGen == null) {
+      initGen = 'None';
+    }
+
     return DropdownButtonFormField(
       decoration: InputDecoration(labelText: "Gender:", icon: Icon(Icons.man)),
       value: initGen,
