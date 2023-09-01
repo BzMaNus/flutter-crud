@@ -138,10 +138,6 @@ class _UserFormState extends State<UserForm> {
       initGen = initGen;
     }
 
-    if (initGen == null) {
-      initGen = 'None';
-    }
-
     return DropdownButtonFormField(
       decoration: InputDecoration(labelText: "Gender:", icon: Icon(Icons.man)),
       value: initGen,
